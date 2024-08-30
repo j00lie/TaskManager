@@ -1,6 +1,9 @@
 package com.example.taskmanager
 
+import java.util.Date
+
 data class Task(
     val title: String,
-    val isChecked: Boolean = false
+    var isChecked: Boolean = false,
+    var deadline: Date? = null
 )
